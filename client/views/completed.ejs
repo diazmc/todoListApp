@@ -22,10 +22,10 @@
             </div>
         </nav>
 
-        <% for (let task of tasks) { %>
         <div class="content">
             <ul class="list-group">
-
+                
+                <% for (let task of tasks) { %>
                 <li class="list-group-item">
                         
                     <h3><i class="material-icons">check_circle_outline</i> <%= task.name %></h3>
@@ -33,9 +33,9 @@
                         <button type="submit" class="btn btn-outline-danger">Delete</button>
                     </form>
                 </li>
+                <% } %>
 
                 </ul>
         </div>
-        <% } %>
     </body>
 </html>
